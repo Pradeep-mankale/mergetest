@@ -10,6 +10,7 @@ resource "azurerm_resource_group" "example" {
     location = "East US"
 }
 
+#this will create vnet with cidr 10.0.0.0
 resource "azurerm_virtual_network" "example" {
     name                = "example-vnet"
     address_space       = ["10.0.0.0/16"]
